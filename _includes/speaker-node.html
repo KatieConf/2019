@@ -1,0 +1,12 @@
+<div class="twelve columns">
+  <div class="two columns">
+    <img src="img/{{k.avatar}}" class="avatar">
+  </div>
+  <div class="ten columns">
+    <h5 class="name">{{k.name}}
+    {% if k.twitter %}<a href="https://twitter.com/{{k.twitter}}"><i class="fab fa-twitter"></i></a>{%endif%}
+    {% if k.linkedin %}<a href="{{k.linkedin}}"><i class="fab fa-linkedin"></i></a>{%endif%}
+    </h5>
+    {% if k.title %}<a href="{{k.link}}">{{k.title}}</a>{%endif%}
+  </div>
+</div>

@@ -1,0 +1,136 @@
+---
+layout: page
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/skeleton.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="shortcut icon" href="img/favicon.png"> 
+  <script src="https://kit.fontawesome.com/b29fd1b4f3.js" crossorigin="anonymous"></script>
+</head>
+<title>KatieConf</title>
+<body>
+  <div class="section intro-header" style="background-image: url('img/header_image.jpg')">
+    <div class="container">
+        <h2 class="year-header">
+        <a href="https://2016.katieconf.xyz">2017</a> | 
+        <a href="https://2017.katieconf.xyz">2017</a> | 
+        <a href="https://2018.katieconf.xyz">2018</a> |
+          <b>2019</b></h2>
+      <h1 class="section-heading fancyfont" style="padding-top: 45px">KatieConf</h1>
+      <h3 class="section-heading" style="margin-top: 0px; padding-top: 0px">"An Abundance of Katherines"</h3>
+      <h3 class="section-heading" style="margin-top: 0px; padding-top: 0px">November 31, 2019</h3>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <hr>
+        <span class="abstract">
+        {% include calltoaction.html %}
+        </span>
+        <hr>
+      </div>
+      <div class="row">
+        <p>KatieConf is a one day, community run conference, held in <a href="https://en.wikipedia.org/wiki/Katy,_Texas">Katy, Texas</a> on November 31, 2019.</a> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="section-heading" style="color:black">
+        <a name="speakers"></a>
+        <h1>Speakers</h1>
+      </div>
+        {% for k in site.data.speakers %}
+      <div class="row">
+        {% include speaker-node.html%}
+      </div>
+        {% endfor %}
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="section-heading" style="color:black">
+        <a name="organisers"></a>
+        <h2>Organisers</h2>
+      </div>
+      <div class="row">
+        {% for k in site.data.organisers %}
+        {% include speaker-node.html %}
+        {% endfor %}
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="section-heading" style="color:black">
+        <h1>Code of Conduct</h1>
+      </div>
+      <div class="row">
+            <p>Our conference is dedicated to providing a harassment-free conference experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack thereof), or technology choices. We do not tolerate harassment of conference participants in any form. Sexual language and imagery is not appropriate for any conference venue, including talks, Twitter and other online media.</p>
+            <p>We follow the JSConf/Ada Initiative Code of Conduct. A full copy of this Code is available on <a href="http://confcodeofconduct.com/">ConfCodeOfConduct.com</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="section-heading" style="color:black">
+        <h1>Tickets</h1>
+      </div>
+      <div class="row">
+            <p>KatieConf 2019 is a free, community run event.</p><p>Seats are limited, but space is plentiful. We will be able to accomodate all attendees, but recommend you bring your own chair/seating.</p><p>Morning and afternoon tea will be provided thanks to the local Community Centre from which we are borrowing power for our projector.</p> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="section-heading" style="color:black">
+        <h2>Diversity Statement</h2>
+      </div>
+      <div class="row">
+        <p>KatieConf is an inclusive conference.</p><p>We accept speakers whose name is derived from the root <i><a href="https://en.wikipedia.org/wiki/Katherine">Katherine</a></i> and starts with either a "C" or a "K"</p>
+        <p>Unsure of your etymology? Check the <a href="https://en.wikipedia.org/wiki/Katherine#Popularity_and_variations">list of variations</a>.
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="section-heading" style="color:black">
+        <a name="about"></a>
+        <h2>About KatieConf</h2>
+      </div>
+      <div class="row">
+        <p>KatieConf is a parody. Have you checked a calendar lately? There is no <a href="http://www.urbandictionary.com/define.php?term=November%2031st">November 31st</a>. Sorry. The town of Katie, OK <a href="https://en.wikipedia.org/wiki/Katie,_Oklahoma">does exist</a>, though.</p>
+        <p>However, all the people featured in the KatieConf lineup <a href="https://twitter.com/glasnt/status/728420940292313089">are real</a>. There are so many fantastic technical presenters who <a href="https://twitter.com/tveastman/status/728423233146355712">just happened to be called Katie</a>, or a variation thereupon. All the organisers listed have put in countless hours into organising and running usergroups, conferences, meetups, podcasts and more.</p>
+        <p>If you are looking for speakers for your conference, why not ask one of the wonderful people featured here? They are all listed with a social media accounts, and a link to some of their prior talks.</p>
+        <p>Do you really need another conference lineup of all men? Or as many female speakers as speakers called Dave?</p>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <p><a href="https://twitter.com/katieconf">KatieConf 2019</a>. Header image by <a href="https://unsplash.com/photos/2XSpU-6siwk">Nicolas Tissot</a>. Sister conference of <a href="https://jessconf.org">JessConf</a></p>
+      </div>
+    </div>
+  </div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-79238568-1', 'auto');
+  ga('send', 'pageview');
+
+</script>        
+</body>
