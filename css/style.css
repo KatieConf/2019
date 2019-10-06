@@ -29,6 +29,8 @@ td {
 .avatar { 
     height: 130px;
     padding: 10px; 
+    margin: 10px;
+    float: right;
 }
 .name { 
   margin-top: 1em;
