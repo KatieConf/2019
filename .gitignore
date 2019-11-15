@@ -1,1 +1,5 @@
 _site
+credentials.json
+venv
+token.pickle
+Gemfile.lock

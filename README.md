@@ -2,36 +2,32 @@
 
 Source code for KatieConf.xyz
 
-Tech stack: 
- - skeleton template
- - manual HTML
- - GitHub pages hosted content
- - Cheap-Az .xyz domain (gandi special)
- - CloudFlare caching + SSL
+## Testing
 
-## Editing
+Requires: 
 
-### Adding a Katie
+  * Ruby
+  * Jekyll
 
-#### Additions to index.html
-
-Remember to add a `<div class="row">` for new rows
-
-```
-<div class="six columns speaker">
-    <table><tr><td>
-    <img src="img/TWITTER.jpeg">
-    </td><td>
-    <h5>GIVEN NAME</h5><a href="https://twitter.com/TWITTER"><img src="img/twitter.png" style="height: 20px"></a>
-    <br>
-    <a href="YOUTUBE">TALK TITLE</a>
-    <br>&nbsp;
-    </td></tr></table>
-</div>
+```shell
+make serve
 ```
 
-#### Social Media
+## Updating
 
- - Have `@KatieConf` follow new listing
- - Append talk to YouTube playlist (or add note to description if non YT link)
- - Tweet out nice things <3
+Add to the `_data` files, as required, 
+
+You can also use the import helper, `import_speakers.py`
+
+Requires: 
+
+ * Read access to "KatieConf 2019 - Call for Proposals (Responses)"
+ * Python 3.8+ in a virtualenv with installed `requirements.txt`
+
+```shell
+make import # appends import to _data
+
+make testimport # Shows the data that would be imported
+```
+
+
