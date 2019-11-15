@@ -1,4 +1,16 @@
-# https://developers.google.com/sheets/api/quickstart/python
+# Import a speaker from the submission form
+#
+# Based on the quickstart template: https://developers.google.com/sheets/api/quickstart/python
+#
+#
+#
+# Logic:
+#  - if the speaker submission is valid, not spam, and not already accepted
+#   - extract important data into a yaml format
+#   - download the avatar to file
+#
+#
+# use in combination with the Makefile
 
 import os.path
 import pickle
