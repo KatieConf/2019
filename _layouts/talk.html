@@ -1,0 +1,43 @@
+---
+layout: basepage
+permalink: /:code/
+---
+{% if page.code %}
+{% assign card = page.code | append: ".png" | prepend: "/img/card/" | prepend: site.url -%}
+<meta name="twitter:card"  content="summary_large_image">
+<meta name="twitter:image" content="{{ card }}" />
+<meta property="og:image"  content="{{ card }}" />
+{% endif %}
+  <div class="section">
+    <div class="container">
+      <div class="section-heading" style="color:black">
+        <h1>{{ page.title }}</h1>
+        <h3>{{ page.name }} {% include othersocial.html %}</h3>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="embed">
+          {% if page.recording %}
+          <iframe src="https://www.youtube.com/embed/{{ page.recording }}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          {% else %}<b>No recording ID</b>{%endif%}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+      {{content}}
+      <hr>
+      <br>
+      Originally presented at <a href="{{page.originallink}}">{{page.original}}</a>
+      <br>
+      <br>
+      <i>{{page.originalblurb}}</i>
+      </div>
+    </div>
+  </div>

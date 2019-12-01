@@ -1,12 +1,9 @@
 <div class="twelve columns">
   <div class="three columns">
-    <img src="img/{{k.avatar}}" class="avatar">
+    <img src="img/avatar/{{k.code}}.jpg" class="avatar">
   </div>
   <div class="nine columns">
-    <h5 class="name">{{k.name}}
-    {% if k.twitter %}<a href="https://twitter.com/{{k.twitter}}"><i class="fab fa-twitter"></i></a>{%endif%}
-    {% if k.linkedin %}<a href="{{k.linkedin}}"><i class="fab fa-linkedin"></i></a>{%endif%}
-    </h5>
-    {% if k.title %}<a href="{{k.link}}">{{k.title}}</a>{%endif%}
+    <h5 class="name">{{k.name}} {% include social.html %}</h5>
+    {% if k.title %}<a href="/{{k.code}}/">{{k.title}}</a>{%endif%}
   </div>
 </div>

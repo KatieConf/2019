@@ -1,0 +1,21 @@
+encoding: "bom|utf-8"
+
+collections:
+    talks:
+        output: true
+
+include:
+ - _pages
+
+exclude:
+ - README.md
+ - CNAME
+ - Gemfile
+ - Gemfile.lock
+ - new_post
+ - vendor
+
+future: true
+
+timezone: "AEST"
+

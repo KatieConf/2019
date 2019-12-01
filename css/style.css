@@ -44,3 +44,10 @@ td {
 .year-header a { 
     color: white; 
   }
+
+@media (min-width: 760px) {
+  .embed iframe {
+      height: 540px;
+      width: 960px;
+  }
+}
