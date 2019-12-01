@@ -2,6 +2,15 @@
 layout: basepage
 permalink: /
 ---
+{% assign descript = "KatieConf 2019 is a one day, community run conference, held in Katy, Texas on November 31, 2019." %}
+{% assign title = "KatieConf 2019" %}
+<meta property="og:title"  content="{{ title }}">
+<meta name="twitter:title" content="{{ title }}">
+<meta property="og:description"  content="{{ descript }}" />
+<meta name="twitter:description" content="{{ descript }}" />
+<meta property="og:url"    content="{{ page.url | prepend: site.url }}">
+<meta name="twitter:site"  content="@katieconf">
+
 {% assign card = "home" | append: ".png" | prepend: "/img/card/" | prepend: site.url -%}
 <meta name="twitter:card"  content="summary_large_image">
 <meta name="twitter:image" content="{{ card }}" />

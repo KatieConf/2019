@@ -3,6 +3,14 @@ layout: basepage
 permalink: /:code/
 ---
 {% if page.code %}
+{% assign descript = page.name %}
+{% assign title = page.title %}
+<meta property="og:title"  content="{{ title }}">
+<meta name="twitter:title" content="{{ title }}">
+<meta property="og:description"  content="{{ descript }}" />
+<meta name="twitter:description" content="{{ descript }}" />
+<meta property="og:url"    content="{{ page.url | prepend: site.url }}">
+<meta name="twitter:site"  content="@katieconf">
 {% assign card = page.code | append: ".png" | prepend: "/img/card/" | prepend: site.url -%}
 <meta name="twitter:card"  content="summary_large_image">
 <meta name="twitter:image" content="{{ card }}" />
